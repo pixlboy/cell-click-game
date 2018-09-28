@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello Game</title>
+	  <style>
+      .app{
+        margin: 0 auto;
+        width: 600px;
+      }
+      .controls{
+        margin:0 0 0 20px;
+        display: inline-block;
+      }
+			.cell{
+				border: 1px solid #000;
+				background: #ccc;
+        float: left;
+        list-style-type: none;
+        cursor:pointer;
+			}
+      .cell.green{
+        background: #8f8;
+      }
+	  </style>
+   </head>
+   <body>
+		   <div id="app" class="app"></div>
+       <div class="controls">
+         <h4>Score: <strong id="score"></strong></h4>
+         <h4>High Score: <strong id="highScore"></strong></h4>
+         <input type="button" id="resetBtn" value="Reset" />
+       </div>
+	     <script src="./game.js"></script>
+  </body>
+</html>
